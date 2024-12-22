@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Mood Matcher</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela+Round&amp;display=swap"-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Movie Mood Matcher</h1>
+            <p>Find the perfect movie for your mood with our technology!</p>
+        </header>
+        <main>
+            <div id="upload-section">
+                <button id="upload-btn" onclick="triggerUpload()">Upload / Take a Picture</button>
+                <input type="file" id="file-input" accept="image/*" style="display: none;" onchange="handleFileUpload(event)">
+            </div>
+            <div id="result-section" style="display: none;">
+                <div id="movie-name">
+                    <i class="fas fa-popcorn"></i>
+                    Inside Out
+                </div>
+                <a href="https://www.imdb.com/title/tt2096673/" target="_blank">More about this movie</a>
+                <div id="enjoy-text">!צפייה מהנה</div>
+            </div>
+        </main>
+        <footer>
+            <p>Powered by AI our team and your mood! © 2024</p>
+        </footer>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
